@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktikum 6.3</title>
+
+    <style>
+        #container{
+            display: flex;
+            background-color: pink;
+            min-height: 90vh;
+            flex-direction: column; 
+        }
+        #content{
+            display: flex;
+            height: 57vh;
+            margin: 10px;
+        }
+        #content > article{
+            flex: 1;
+            order: 2;
+            background-color: palevioletred;
+            padding: 170px 0 0 270px; 
+            margin: 10px;
+        }
+        #content > aside{
+            flex: 0 0 40vh;
+            order: 1;
+            background-color: lightskyblue;
+            margin: 10px;
+        }
+        header,footer{
+            background-color: lightblue;
+            height:17vh ;
+            margin: 20px;
+        }
+        img {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>header</header>
+        <div id="content">
+            <aside>aside</aside>
+            <article><h3>
+                <img src="image/Logo_Institut_Teknologi_Bandung.png" height="100" width="100" alt="image"/>
+                <img src="image/universitas-indonesia-logo-AE647705AB-seeklogo.com.png" height="100" width="100" alt="image"/>
+                <img src="image/stt-nf.png" height="98" width="98" alt="image"/>
+            </h3></article>
+        </div>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

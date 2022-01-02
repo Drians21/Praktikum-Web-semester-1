@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+
+    <script>
+        function image(){
+            let pilihan = document.getElementById("pilihan").value;
+            let gambar = document.getElementById("gambar");
+            
+            if (pilihan == "ui") {
+                gambar.src = "image/ui.png";
+                alert("Klik 'OK' Untuk Memunculkan Logo UI.png");
+                
+            }
+            else if (pilihan == "itb") {
+                gambar.src = "image/itb.png";
+                alert("Klik 'OK' Untuk Memunculkan Logo ITB.png");
+                
+            }
+            else if (pilihan == "ugm") {
+                gambar.src = "image/ugm.png";
+                alert("Klik 'OK' Untuk Memunculkan Logo UGM.png");
+            }
+            else if (pilihan == "ipb") {
+                gambar.src = "image/ipb.png";
+                alert("Klik 'OK' Untuk Memunculkan Logo IPB.png");
+            }
+            else if (pilihan == "its") {
+                gambar.src = "image/its.png";
+                alert("Klik 'OK' Untuk Memunculkan Logo ITS.png");
+            }
+            else if (pilihan == "unpad") {
+                gambar.src = "image/unpad.png";
+                alert("Klik 'OK' Untuk Memunculkan Logo UNPAD.png");
+            }
+            else if (pilihan == "unsoed") {
+                gambar.src = "image/unsoed.png";
+                alert("Klik 'OK' Untuk Memunculkan Logo UNSOED.png");
+            }
+            else if (pilihan == "sttnf") {
+                gambar.src = "image/stt-nf.png";
+                alert("Klik 'OK' Untuk Memunculkan Logo STT-NF.png");
+            }
+            else{
+                alert("pilihan tidak ada")
+            }
+            
+        }
+
+    </script>
+
+    <style>
+        *{
+            background-color: lightgray;
+        }
+        .container{
+            width: 700px;
+            height: 400px;
+            /* border: 4px solid red; */
+            display: flex;
+        }
+        .container1{
+           
+            padding: 5px;
+            margin-right: 30px;
+            width: 200px;
+            height: 200px;
+            
+            
+        }
+        .container2{
+            border: 4px solid red;
+            width: 400px;
+            height: 350px;
+            margin: 28px 0 0 10px;
+            padding: 10px 0 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Picker</h1>
+    <div class="container">
+        <div class="container1">
+        <h3>Silahkan Pilih Gambar di bawah ini :</h3> <br>
+        <select name="pilihan" id="pilihan" onchange="image()">
+            <option value="pilih">Pilih Gambar..</option>
+            <option value="ui">Logo UI</option>
+            <option value="itb">Logo ITB</option>
+            <option value="ugm">Logo UGM</option>
+            <option value="ipb">Logo IPB</option>
+            <option value="its">Logo ITS</option>
+            <option value="unpad">Logo UNPAD</option>
+            <option value="unsoed">Logo UNSOED</option>
+            <option value="sttnf">Logo STTNF</option>
+        </select>
+
+        </div><br>  
+        <div class="container2">
+            <figure>
+                <img id="gambar" alt="" width="300">
+            </figure>
+
+        </div>
+    </div>
+</body>
+</html>

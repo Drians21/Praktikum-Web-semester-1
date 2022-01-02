@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validasi</title>
+    <script>
+        function inputan(){
+            let nama  = document.getElementById("nama").value;
+            let email = document.getElementById("email").value;
+            let waktu = document.getElementById("waktu").value;
+            let tujuan = document.getElementById("tujuan").value;
+            let tiket = document.getElementById("tiket").value;
+            
+            let text = document.createElement("p");
+            text.innerHTML = "Jadwal Penerbangan Anda :"+"<br><hr><br>" + "Nama Pelanggan : " + nama + "</br></br>" + "Email : " + email +"</br></br>" + "Waktu Keberangkatan : " + waktu + " WIB."
+            +"</br></br>"+ "Tujuan Keberangkatan : " + tujuan + "</br></br>" +"Jumlah Tiket : " + tiket; 
+            let parent = document.getElementById("hasil");
+            parent.appendChild(text); //untuk nampilin text nya
+            
+            event.preventDefault();
+
+
+            
+        }
+    </script>
+
+    <style>
+        body{
+            background-color: lightgray;
+        }
+        fieldset{
+            display: flex;
+            width: 420px;
+            height: 400px;
+
+        }
+        #hasil{
+            border: 3px solid orange;
+            width: 320px;
+            height: 300px;
+            margin: 10px 5px 0px 100px;
+            padding-left: 10px;
+            overflow-y: scroll;
+           
+        }
+        .bingkai{
+            border: 3px ;
+            display: flex;
+        }
+        .box2{
+            text-align: center;
+            margin: 100px;
+        }
+
+
+    </style>
+</head> 
+<body>
+    <div class="bingkai">
+        <fieldset>
+            <legend>Form Validasi</legend>
+            <form onsubmit="inputan()" id="form">
+            
+                Nama Pelanggan : <br>
+                <input type="text" value="" id="nama" maxlength="30" placeholder="Masukan Nama Anda..." required><br><br>
+                
+                Email : <br>
+                <input type="email" value="" id="email" placeholder="Masukan Email Anda..." required><br><br>
+
+                Jam Keberangkatan : <br>
+                <input type="time" value="" id="waktu"  required><br><br>
+
+                Tujuan Keberangkatan : <br>
+                <input type="text" value="" id="tujuan" required><br><br>
+
+                Jumlah Tiket : <br>
+                <input type="number" value="" id="tiket" min="1" max ="10" required><br><br>
+                <div>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Pesan</button>
+                </div>
+            </form>
+            <div id="hasil">
+            </div>
+        </fieldset>
+        <div class="box2">
+            <h1>Selamat Datang!</h1>
+            <h3>Silahkan Isi form Disamping Untuk Mendapatkan Jadwal Penerbangan </h3>
+            <h1>Terima Kasih</h1>
+        </div>
+    </div>
+    <br>
+    <hr>
+    
+ 
+       
+    
+</body>
+</html>

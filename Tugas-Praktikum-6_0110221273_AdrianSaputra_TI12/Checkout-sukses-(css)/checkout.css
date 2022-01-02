@@ -1,0 +1,30 @@
+.flexbox{
+    display: flex;
+    justify-content:space-evenly ;
+
+    
+}
+.flexgrow{
+    flex-grow: 1;
+    text-indent: 20px;
+}
+
+.flex2{
+    display: flex;
+}
+.p2{
+    text-indent: 50px;
+}
+#f1{
+    font-size: 30px;
+}
+#f2{
+    font-size: 20px;
+}
+#f3{
+    font-size: 20px;
+}
+.flexcolor{
+    background-color: lightgrey;
+    padding: 40px;
+}

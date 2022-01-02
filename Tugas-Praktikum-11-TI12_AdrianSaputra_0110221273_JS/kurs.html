@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs</title>
+    <script>
+        function kurs(){
+            let nilai1 = document.getElementById("nilai1").value;
+            let valas = document.getElementById("valas").value;
+            let nilai2 = 0;
+            if (valas == "us"){
+                nilai2 = 9.915 * nilai1;
+            }
+            else if (valas == "singapore") {
+                nilai2 = 13.472 *nilai1;
+            }
+            else if (valas == "ringgit") {
+                nilai2 = 874 *nilai1;
+            }
+            else if (valas == "yen") {
+                nilai2 = 120 *nilai1;
+            }
+            else if (valas == "euro") {
+                nilai2 = 15.888 *nilai1;
+            }
+            else if (valas == "riyal") {
+                nilai2 = 3.592 *nilai1;
+            }
+            else{
+                nilai2 = 0;
+            }
+
+            document.getElementById("rupiah").value=nilai2;
+            
+        }
+
+    </script>
+
+    <style>
+        body{
+            background-color: lightgray;
+        
+        }
+        form{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <form>            
+        <fieldset>
+            <legend>Kurs Rupiah - Mata Uang Asing</legend><br>
+            <table style="border: 2px solid black;">
+                <thead>
+                    <tr>
+                        <th>Masukan Nilai</th>
+                        <th> | </th>
+                        <th>Valas</th>
+                        <th> | </th>
+                        <th>Nilai Rupiah</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="number" value="" id="nilai1" size="10" onchange="kurs()"></td>
+                        <td> | </td>
+                        <td>
+                            <select value="valas" id="valas" onchange="kurs()">
+                                <option value="us">Dollar US</option>
+                                <option value="singapore">Dollar Singapore</option>
+                                <option value="ringgit">Ringgit Malaysia</option>
+                                <option value="yen">Yen Japan</option>
+                                <option value="euro">Euro</option>
+                                <option value="riyal">Riyal Arab Saudi</option>
+                                
+
+                            </select>
+                        </td>
+                        <td> | </td>
+                        <td><input type="text" value="" id="rupiah" size="10"></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            </fieldset>
+    </form>
+    
+</body>
+</html> 
