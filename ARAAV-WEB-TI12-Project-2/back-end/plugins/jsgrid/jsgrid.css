@@ -10,10 +10,7 @@
     font-size: 1em;
 }
 
-.jsgrid,
-.jsgrid *,
-.jsgrid *:before,
-.jsgrid *:after {
+.jsgrid, .jsgrid *, .jsgrid *:before, .jsgrid *:after {
     box-sizing: border-box;
 }
 
@@ -21,6 +18,17 @@
 .jsgrid textarea,
 .jsgrid select {
     font-size: 1em;
+}
+
+.jsgrid-grid-header {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 .jsgrid-grid-body {
@@ -85,6 +93,7 @@
 .jsgrid-insert-row input[type='checkbox'] {
     width: auto;
 }
+
 
 .jsgrid-selected-row .jsgrid-cell {
     cursor: pointer;

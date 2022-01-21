@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SISTA</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+
+  <style>
+    .breadcrumb-item+.breadcrumb-item::before {
+    float: left;
+    padding-right: 0.5rem;
+    color: #6c757d;
+    content: "|";
+    }
+    .footer{
+      display: flex;
+      justify-content: space-between;
+    }
+    nav{
+      display: flex;
+      justify-content: space-between;
+    }
+    #breadcrumb{
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      padding-top: 10px;
+    }
+  </style>
+
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav aria-label="breadcrumb" class="" id="breadcrumb">
+    <div>
+      <ol class="breadcrumb">
+        
+      </ol>
+    </div>
+    <div>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Admin</a></li>
+        <li class="breadcrumb-item"><a href="login.html">logout</a></li>
+      </ol>
+    </div>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="" class="brand-link">
+      <img src="img/logo_sista.png">
+      <span class="brand-text">SISTA</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="img/logo.jpeg">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Admin</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="#" class="nav-link active">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Dashboard</p>
+            </a>
+            
+            <li class="nav-item">
+              <a href="#" class="nav-link active">
+                <p class="ml-xl-4">Seminar TA
+                  <i class="right fas fa-angle-down"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="mockup-7(landing-page)-kelola-seminar.html" class="nav-link active">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Kelola Seminar</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="mockup-8-form-seminar.html" class="nav-link active">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Form  Daftar Seminar</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="mockup-9-data-peserta-seminar.html" class="nav-link active">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Daftar Peserta Seminar</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+                  <a href="#" class="nav-link active">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Mahasiswa</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link active">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Dosen</p>
+                  </a>
+                </li>
+              </li>
+              <li class="nav-item">
+                <a href="login.html" class="nav-link">
+                  <i class="fas fa-circle"></i>
+                  <span>Logout</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="">Daftar Peserta Seminar</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="mockup-7(landing-page)-kelola-seminar.html">Seminar</a></li>
+              <li class="breadcrumb-item active">Peserta Seminar</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Content Seminar -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <ul style="list-style-type: none;">
+            <li style="font-size: larger;">Seminar Mahasiswa : Adrian Saputra (0110221111) - Teknik Informatika</li>
+            <li style="font-size: larger;">Judul : Rancang Bangun Aplikasi Seminar Tugas Akhir Menggunakan MVC Framework</li>
+            <li style="font-size: larger;">Waktu Seminar : Senin, 4 Januari 2020, Jam: 10:00</li>
+          </ul>
+            <div class="col-md-11">
+              <h3 style="font-weight: bold; text-align: center;">DAFTAR PESERTA SEMINAR</h3>
+              <table class="table table-bordered table-sm table-hover table-striped ml-3">
+                <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>NIM</th>
+                    <th>Mahasiswa/i</th>
+                    <th>Prodi</th>
+                    <th>Waktu</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>0110221111</td>
+                    <td>Adrian Saputra</td>
+                    <td>Teknik Informatika</td>
+                    <td>S1</td>
+                    <td>Diterima</td>
+                    <td>Edit | Delete</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>0110221112</td>
+                    <td>Alya Salsa Ramadhani</td>
+                    <td>Teknik Informatika</td>
+                    <td>S1</td>
+                    <td>Diterima</td>
+                    <td>Edit | Delete</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>0110221113</td>
+                    <td>Muhammad Agil Akbar</td>
+                    <td>Teknik Informatika</td>
+                    <td>S1</td>
+                    <td>Diterima</td>
+                    <td>Edit | Delete</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>0110221114</td>
+                    <td>Rafly Al Hakim</td>
+                    <td>Teknik Informatika</td>
+                    <td>S1</td>
+                    <td>Ditolak</td>
+                    <td>Edit | Delete</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>0110221115</td>
+                    <td>Vidya Febriana</td>
+                    <td>Teknik Informatika</td>
+                    <td>S1</td>
+                    <td>Ditolak</td>
+                    <td>Edit | Delete</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button class="btn btn-primary btn-md active my-4 mx-5">Tambah Peserta Seminar</button>
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!--Footer -->
+  <footer class="main-footer">
+    <div class="footer">
+    <h5>AraavWeb</h5> 
+    <h5>SISTA</h5>
+    </div> 
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+</body>
+</html>
