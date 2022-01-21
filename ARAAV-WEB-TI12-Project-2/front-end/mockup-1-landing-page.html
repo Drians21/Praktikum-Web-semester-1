@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <title>Sistem Informasi Seminar Tugas Akhir</title>
+   
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <style>
+    .breadcrumb{
+      background-color: white;
+      font-size: small;
+    }
+    .breadcrumb-item+.breadcrumb-item::before {
+      content: "|";
+        
+    }
+    #breadcrumb{
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      padding-top: 10px;
+      /* font-size: 17px; */
+    }
+    .lingkaran1{
+      justify-content: center; 
+      align-items: center;
+      border-radius: 100%;
+      text-align: center;
+      display: flex;
+      color: blue;
+      background-color: lightgreen;
+      width: 150px;
+      height: 100px;
+      padding: 7px;        
+    }
+    .lingkaran{
+      display: flex;   
+    }
+    #about{
+      font-size: 16px;
+      margin-top: 200px;    
+    }
+    .lingkaran2{
+      justify-content: center; 
+      align-items: center;
+      text-align: center;
+      display: flex;
+      width: 150px;
+      height: 100px;
+      padding: 7px;
+      font-size: 20px;  
+    }
+    .footer{
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+    
+</head>
+<body>
+  <!-- header -->
+  <header class="container-fluid bg-secondary text-white">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1 class="display-5 py-3">Sistem Informasi Seminar Tugas Akhir - SISTA</h1>
+        </div>
+    </div>
+  </header>
+  <!-- Link Nav -->
+  <nav aria-label="breadcrumb" class="" id="breadcrumb">
+    <div>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Home</a></li>
+        <li class="breadcrumb-item"><a href="#jadwal">Jadwal</a></li>
+        <li class="breadcrumb-item"><a href="mockup-6-daftar-seminar.html">Daftar Seminar</a></li>
+        <li class="breadcrumb-item"><a href="#about">About</a></li>
+        <li class="breadcrumb-item"><a href="#berita">Berita</a></li>
+      </ol>
+    </div>
+    <div>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="mockup-2-login.html">Login</a></li>
+        <li class="breadcrumb-item"><a href="mockup-3-register.html">Register</a></li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <main class="container">
+    <div class="row">
+        <div class="col-12 my-5">
+          <p class="">Alur Seminar/Tugas Akhir</p>
+          <div class="lingkaran">
+            <div class="lingkaran2">1</div>
+            <div class="lingkaran2">2</div>
+            <div class="lingkaran2">3</div>
+            <div class="lingkaran2">4</div>
+            <div class="lingkaran2">5</div>
+          </div>
+          <div class="lingkaran">
+            <div class="lingkaran1">Daftar TA</div>
+            <!-- <i class="fas fa-arrow-circle-right mt-4 mx-1"></i> -->
+            <div class="lingkaran1">Seminar<br>Proposal</div>
+            <!-- <i class="fas fa-arrow-circle-right mt-4 mx-1"></i> -->
+            <div class="lingkaran1">Seminar<br>Hasil</div>
+            <!-- <i class="fas fa-arrow-circle-right mt-4 mx-1"></i> -->
+            <div class="lingkaran1">Sidang</div>
+            <!-- <i class="fas fa-arrow-circle-right mt-4 mx-1"></i> -->
+            <div class="lingkaran1">Yudisium</div>
+          </div>
+        </div>
+    </div>
+  </main>
+  <br><br>
+  <main class="container-fluid">
+    <div class="row">
+        <div class="col-12 py-4 px-5">
+          <h1 class="text-center my-5" id="jadwal">Jadwal</h1>
+          <div class="table-responsive">
+          <table class="table table-bordered table-secondary table-sm tabel-hover">
+            <thead>
+              <tr>
+                <th class="text-center">NO.</th>
+                <th>NIM</th>
+                <th>Mahasiswa/i</th>
+                <th>Seminar</th>
+                <th>Waktu</th>
+                <th>Ruangan</th>
+                <th>Peserta</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center">1</td>
+                <td>0110221111</td>
+                <td>Adrian Saputra</td>
+                <td><a href="mockup-4-detail-jadwal(adrian).html"><u>Seminar Proposal</u></a></td>
+                <td>10.00 04-01-2021</td>
+                <td>Online</td>
+                <td> 10 (view)</td>  
+              </tr>
+              <tr>
+                <td class="text-center">2</td>
+                <td>0110221112</td>
+                <td>Alya Salsa Ramadhani</td>
+                <td><a href="mockup-4-detail-jadwal(alya).html"><u>Seminar Hasil</u></a></td>
+                <td>10.00 04-01-2021</td>
+                <td>Online</td>
+                <td>10 (view)</td>  
+              </tr>
+              <tr>
+                <td class="text-center">3</td>
+                <td>0110221113</td>
+                <td>Muhammad Agil Akbar</td>
+                <td><a href="mockup-4-detail-jadwal(agil).html"><u>Seminar Hasil</u></a></td>
+                <td>10.00 04-01-2021</td>
+                <td>Online</td>
+                <td>10 (view)</td>  
+              </tr>
+              <tr>
+                <td class="text-center">4</td>
+                <td>0110221114</td>
+                <td>Rafly Al Hakim</td>
+                <td><a href="mockup-4-detail-jadwal(rafly).html"><u>Seminar Akhir</u></a></td>
+                <td>10.00 04-01-2021</td>
+                <td>B2304</td>
+                <td>0 (view)</td>  
+              </tr>
+              <tr>
+                <td class="text-center">5</td>
+                <td>0110221115</td>
+                <td>Vidya Febriana</td>
+                <td><a href="mockup-4-detail-jadwal(vidya).html"><u>Seminar Akhir</u></a></td>
+                <td>13.00 04-01-2021</td>
+                <td>B2304</td>
+                <td>0 (view)</td>  
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+    </div>
+  </main>
+
+  <!-- About -->
+  <main class="container-fluid text-center text-white" id="about">
+    <div class="row bg-secondary py-5">
+      <div class="col-12">
+            <h1 class="">About</h1>
+            <p class="py-5">Tugas Akhir (TA) adalah karya ilmiah yang disusun menurut kaidah keilmuan dan ditulis berdasarkan kaidah Bahasa Indonesia, di bawah pengawasan atau pengarahan dosen pembimbing, untuk memenuhi kriteria-kriteria kualitas yang telah ditetapkan sesuai keilmuannya masing-masing. Tugas Akhir dibuat sebagai salah satu persyaratan untuk menyelesaikan suatu program studi.</p>
+        </div>
+    </div>
+  </main>
+  
+  <!-- Berita -->
+  <main class="container pt-5" id="berita">
+    <h1 class="text-center py-5"><u>Berita</u></h1>
+    <div class="row row-cols-1 row-cols-md-2 g-4 mb-5 container">
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/berita-1.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">13/01/2022</h5>
+            <h5 class="card-text"><a href="https://nurulfikri.ac.id/sekolah-tinggi-teknologi-terpadu-nurul-fikri-telah-mengadakan-sosialisasi-pembukaan-pkm-2022/"> Sekolah Tinggi Teknologi Terpadu Nurul Fikri Telah Mengadakan Sosialisasi Pembukaan PKM 2022.</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/berita-2.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">28/12/2021</h5>
+            <h5 class="card-text"><a href="https://nurulfikri.ac.id/mahasiswa-berprestasi-dan-kuliah-umum-teknologi-digital-peluang-tantangan-dan-ikhtiar-membersamainya/">Mahasiswa Berprestasi dan Kuliah Umum Teknologi Digital Peluang,Tantangan dan Ikhtiar Membersamainya.</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/berita-3.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">23/11/2021</h5>
+          <h5 class="card-text"><a href="https://nurulfikri.ac.id/dosen-stt-terpadu-nurul-fikri-mengikuti-konferensi-virtual-icic-isico-dan-icimcis-2021/">Dosen STT Terpadu Nurul Fikri Mengikuti Konferensi Virtual ICIC, ISICO dan ICIMCIS 2021.</a></h5>
+        </div>
+      </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/berita-4.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">8/10/2021</h5>
+            <h5 class="card-text"><a href="https://nurulfikri.ac.id/prodi-baru-untuk-maju-program-studi-bisnis-digital-di-stt-terpadu-nurul-fikri/">“Prodi Baru untuk Maju” Program Studi Bisnis Digital di Sekolah Tinggi Teknologi Terpadu Nurul Fikri.</a></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+</main>
+  
+  
+
+  <!-- Footer -->
+  <footer class="bg-secondary">
+    <div class="footer">
+        <h5 class="text-white mt-1 ml-2">AraavWeb</h5>
+        <h5 class="text-white mt-1 mr-2">SISTA</h5>
+    </div>
+</footer>
+
+  <!-- js -->
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>
